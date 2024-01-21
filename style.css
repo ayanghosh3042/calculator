@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto Mono', monospace;
+}
+body{
+    background-color: rgb(255, 133, 154);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+#calculator{
+    background-color: rgb(77, 72, 72);
+    height: 500px;
+    width: 370px;
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 100px ;
+    grid-gap: 10px;
+    padding: 30px;
+    margin: 50px;
+}
+.btn{
+    background-color: #7fffd4;
+    border:2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 20px;
+}
+#disp{
+    background-color: antiquewhite;
+    grid-column: 1/span 4;
+}
+
+
+#b7,#b4,#b1{
+    grid-column: 1 /span 1;
+}
+#b8,#b5,#b2{
+    grid-column: 2 /span 1;
+}
+#b9,#b6,#b3,#b-dot{
+    grid-column: 3 /span 1;
+}
+#bX,#b-,#b_add,#b_equal{
+    grid-column: 4 /span 1;
+}
+#b0{
+    grid-row: 6/span 1;
+    grid-column: 1/span 2;
+}
+
+
+#b7,#b8,#b9,#b-{
+    grid-row:3 /span 1;
+}
+#b4,#b5,#b6,#b_add{
+    grid-row:4 /span 1;
+}
+#b1,#b2,#b3{
+    grid-row:5 /span 1;
+}
+#b_equal{
+    grid-row:5 /span 2 ;
+}
