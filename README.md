@@ -1,2 +1,2 @@
 # calculator
-not complit
+completed
